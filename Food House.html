@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food House</title>
+    <link rel="stylesheet" href="Food House.css">
+    
+</head>
+<style>
+    .mobile-nav-bar a  + a{
+        color:lightgreen; 
+        text-decoration:none; 
+        font-size:20px; 
+        position: relative;
+        top: 13px;
+        padding: 5px;
+    }
+
+</style>
+<body>
+    <div>
+       <div class="nav-bar">
+        <div class="mobile-nav-bar">
+            <a href="#home" style="text-decoration: none;"><span>food house <button></button></span></a>
+            <a href="javascript:void(0)"  title="Menu">⋯</a>
+        </div>
+        <div class="Desktop-nav-bar">
+            <a href="#home"  style="text-decoration: none;"> <span>Food House <button type="button"></button></span></a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#about">About us</a></li>
+            </ul>
+        </div>
+       </div> 
+       <div class="col-1">
+            <div class="searchbox">
+                <h1>Food House <button></button></h1>
+                <input type="search"  placeholder="     Search...">
+            </div>
+       </div>
+       <div class="col-2">
+        <div class="col-2-1">
+            <p>
+Hungry ?
+Eat With Food House
+Make The Best Orders
+<span>Enjoy The taste of Joy from Food House <button></button></span>
+            </p>
+            <div>
+            <a href="#col-3" ><button>Order Now</button></a> 
+            <button onclick="document.getElementById('col-2-sg').style.display='block'" >Sign in</button>
+            </div>
+        </div>
+        <div class="col-2-sg" style="display: none;" id="col-2-sg">
+            <span onclick="document.getElementById('col-2-sg').style.display='none'" class="sg-x" title="Close">&times;</span>
+            <form action="" class="col-2-sg-content" name="formvalid" onsubmit=" return validateForm()" method="post" >
+                <div class="col-2-sg-content-container">
+                    <h1>Sign Up</h1>
+  <p>Please fill in this form to create an account.</p>
+  <hr>
+  <label for="email"><b>Email:</b></label><br>
+  <input type="email" placeholder="Enter Email" name="email" required><br>
+  <p id="email_error"></p>
+<br>
+  <label for="psw"><b>Password:</b></label><br>
+  <input type="password" placeholder="Enter Password" name="psw" pattern="(?=.*\d).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+  <p id="psw_error"></p>
+<br>
+  <label for="psw-repeat"><b>Repeat Password:</b></label><br>
+  <input type="password" placeholder="Repeat Password" name="psw_repeat" required><br>
+  <p id="psw_repeat_error"></p>
+ <br>
+  <label>
+    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+  </label>
+
+  <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                <input type="submit" value="Sign up" >
+                <button onclick="document.getElementById('col-2-sg').style.display='none'" >Cancel</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-2-2">
+            <img src="image/crack burgers -.jpg" alt="" width="65%" height="65%">
+        </div>
+       </div>
+       <div class="col-3" id="col-3">
+        <center><h1>Our Menu</h1></center>
+        <div class="col-3-1">
+            <div class="col-3-1-1">
+                <p style="text-align: center; font-weight: bold; "><span>Chicken Caser salad</span></p>
+                <img src="image/Easy Chicken Caesar Salad Wrap.jpg" alt="">
+                <p>Price: <span style="color: gold;">$15</span></p>
+                <a href="Menu.html#food_selected"><button>Order Now</button></a>
+            </div>
+            <div class="col-3-1-2">
+                <p style="text-align: center; font-weight: bold; "><span>Hawaiian Chicken Salad</span></p>
+                <img src="image/Hawaiian Chicken Salad_ Gluten-Free & Whole Health Flexi-Plan.jpg" alt="">
+                <p>Price: <span style="color: gold;">$30</span></p>
+                <a href="Menu.html"><button>Order Now</button></a>
+            </div>
+            <div class="col-3-1-3">
+                <p style="text-align: center; font-weight: bold; "><span >Chorizo Pizza</span></p>
+                <img src="image/The Best Homemade Chorizo Pizza.jpg" alt="">
+                <p>Price: <span style="color: gold;">$50</span></p>
+                <a href="Menu.html"><button>Order Now</button></a>
+            </div>
+        </div>
+       </div>
+       <div class="col-4">
+        <div class="col-4-modal">
+            <h1>About us</h1>
+        <div class="col-4-1">
+            <div class="col-4-1-1">
+                <div class="col-4-1-1-1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo rerum eius hic nisi veniam facere nostrum quisquam ab non iste illum doloribus voluptates, repellendus dignissimos praesentium, voluptatibus ad magnam sunt.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nulla deleniti dolorum totam, nostrum eveniet vitae maiores placeat excepturi autem pariatur atque temporibus minima, itaque perspiciatis praesentium at ratione neque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolorem nemo? Odit aperiam alias voluptate cumque maiores exercitationem, sunt nihil sapiente tempore. Aliquam eaque fugit amet consequatur ut in sit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam necessitatibus, voluptatum sit quae quasi natus beatae. Ratione, voluptatibus maiores enim temporibus nihil odit accusantium cumque explicabo obcaecati reiciendis autem vel?
+                    </p>
+                </div>
+                <div class="col-4-1-1-2">
+                    <p>
+<span style="color: lightskyblue; font-size: larger;">Comments About us</span><br>
+<img src="image/testimonal_1.jpg" alt="" width="50px" height="50px" style="border-radius: 50%;"><span >Chris Fox</span> <br>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+<span style="color: gold; font-size:large;">🥇🥇🥇🥇🥇</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-4-2">
+                <center><h1>Trending </h1></center>
+                <div class="col-4-2-1">
+                    <div>
+                        <img src="image/Melt In Your Mouth Caesar Chicken_ Tender and Flavorful.jpg" alt="" width="100%" height="400em">
+                        <div>
+                            <p>
+                                A Nigeria Recipe made in Yourbaland Called Ceaser Chicken
+                        </p>
+                        <button>Try Recipe</button>
+                    </div>
+                    </div>
+                    <div>
+                        <img src="image/Melt In Your Mouth Caesar Chicken_ Tender and Flavorful.jpg" alt="" width="100%" height="400em">
+                        <div>
+                            <p>
+                                A Nigeria Recipe made in Yourbaland Called Ceaser Chicken
+                        </p>
+                        <button>Try Recipe</button>
+                    </div>
+                    </div>
+                    <div>
+                        <img src="image/Melt In Your Mouth Caesar Chicken_ Tender and Flavorful.jpg" alt="" width="100%" height="400em">
+                        <div>
+                            <p>
+                                A Nigeria Recipe made in Yourbaland Called Ceaser Chicken
+                        </p>
+                        <button>Try Recipe</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+       </div>
+    </div>
+    <script src="index.js"></script>
+    <script type="text/javascript" >
+        let bg = document.getElementById("col-2-sg");
+        window.onclick = function(event){
+            if (event.target == bg){
+                bg.style.display = "none";
+            }
+        }
+
+    </script>
+</body> 
+</html>
